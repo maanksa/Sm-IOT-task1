@@ -1,0 +1,311 @@
+<!DOCTYPE html> <html> <head> <meta name="viewport" content="width=device-width,
+initial-scale=1"> <style> .slidecontainer {
+   width: 100%;
+   position: relative;
+   bottom: 100px;
+   }
+    .myDiv {
+
+
+      position: relative;
+      top: auto;
+
+      background-color: #026075;
+      width: 500px;
+      height: 750px;
+      border: 15px outset #af0a40;
+      padding: 50px;
+      margin: auto;
+    }
+    .buttoncontainer{
+      width: 100%;
+      position: relative;
+      top:20px;
+    }
+    .buttoncontainer1{
+
+      margin:0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      bottom:80px;
+    }
+    .newbox{
+      position: absolute;
+      left: 900px;
+      bottom: 100px;
+      background-color: #026075;
+      width: 400px;
+      height: 250px;
+      border: 15px outset #af0a40;
+      padding: 50px;
+      margin: 430px;
+    }
+
+    p{
+      position: relative;
+
+      -webkit-text-stroke: 0.5px red;
+
+      text-align: center;
+      font-size: 150%;
+      color: orange;
+
+    }
+
+    .button {
+  position: relative;
+  background-color:  #00b8e6;
+  border: solid #af0a40;
+  font-size: 20px;
+  color: #FFFFFF;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+.button:after {
+  content: "";
+  background:  #33d6ff;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+body {
+
+  background-position: top ;
+  background-image: url('sm-background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  }
+
+  h1{
+    position: relative;
+    bottom: 70px;
+    font-size: 40px;
+    text-align: center ;
+    -webkit-text-stroke: 1px black;
+    color: #af0a40;
+    text-shadow:
+        3px 3px 0 #026075,
+      -1px -1px 0 #026075,
+       1px -1px 0 #026075,
+       -1px 1px 0 #026075,
+        1px 1px 0 #026075;
+  }
+  input[type=range] {
+  -webkit-appearance: none;
+  margin: 18px 0;
+  width: 87%;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -14px;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background: #367ebd;
+}
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  background: #3071a9;
+  border-radius: 1.3px;
+  border: 0.2px solid #010101;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  border-width: 16px 0;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #2a6495;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-fill-upper {
+  background: #3071a9;
+  border: 0.2px solid #010101;
+  border-radius: 2.6px;
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+}
+input[type=range]::-ms-thumb {
+  box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
+  border: 1px solid #000000;
+  height: 36px;
+  width: 16px;
+  border-radius: 3px;
+  background: #ffffff;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #3071a9;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #367ebd;
+}
+
+
+</style>
+
+  <title>الاساليب الذكية لوحة التحكم بذراع الروبوت </title>
+
+  </head>
+
+  <body>
+
+
+
+<div class="myDiv">
+<h1>Robotic Arm Control Unit</h1>
+  <div class="slidecontainer">
+
+    <form action="send.php" method="post" name="sl" target="target" >
+
+
+    <p> Engine 1</p>
+    <input type="range" min="0" max="100" value="0" class="slider" id="engin1" name = "eng1"
+    <p1>Value: <span id="e1value"></span></p1>
+    <p> Engine 2</p>
+    <input type="range" min="0" max="100" value="0" class="slider" id="engin2" name = "eng2"
+    <p1>Value: <span id="e2value"></span></p1>
+    <p> Engine 3</p>
+    <input type="range" min="0" max="100" value="0" class="slider" id="engin3" name = "eng3"
+    <p1>Value: <span id="e3value"></span></p1>
+    <p> Engine 4</p>
+    <input type="range" min="0" max="100" value="0" class="slider" id="engin4" name = "eng4"
+    <p1>Value: <span id="e4value"></span></p1>
+    <p> Engine 5</p>
+    <input type="range" min="0" max="100" value="0" class="slider" id="engin5" name = "eng5"
+    <p1>Value: <span id="e5value"></span></p1>
+    <p> Engine 6</p>
+    <input type="range" min="0" max="100" value="0" class="slider" id="engin6" name = "eng6"
+    <p1>Value: <span id="e6value"></span></p1>
+    <div class="buttoncontainer">
+
+      <input type="submit" value = "Save"name="Save" class="button"style="left:280px">
+      <input type="submit" value = "Run" name="Run" class="button"style="left:280px">
+</div>
+    </form>
+
+  </div>
+ </div>
+
+
+  <div class="newbox">
+  <h1>Dock Control unit </h1>
+
+  <div class="buttoncontainer1">
+
+  <button class="button"style="left:50px;bottom:10px">Forward</button>
+  <br>
+  <button class="button"style="right:55px">Left</button>
+  <button class="button"style="left:55px">Right</button>
+  <br>
+  <button class="button"style="left:50px;top:10px">Backward</button>
+
+
+
+  </div>
+  </div>
+
+  </body>
+
+<script>
+var slider = document.getElementById("engin1");
+var output = document.getElementById("e1value");
+output.innerHTML = slider.value;
+slider.oninput = function() {
+  output.innerHTML = this.value;
+}
+var slider2 = document.getElementById("engin2");
+  var output2 = document.getElementById("e2value");
+  output2.innerHTML = slider2.value;
+  slider2.oninput = function() {
+    output2.innerHTML = this.value;
+  }
+
+  var slider3 = document.getElementById("engin3");
+  var output3 = document.getElementById("e3value");
+  output3.innerHTML = slider3.value;
+  slider3.oninput = function() {
+    output3.innerHTML = this.value;
+  }
+
+  var slider4 = document.getElementById("engin4");
+  var output4 = document.getElementById("e4value");
+  output4.innerHTML = slider4.value;
+  slider4.oninput = function() {
+    output4.innerHTML = this.value;
+  }
+
+  var slider5 = document.getElementById("engin5");
+  var output5 = document.getElementById("e5value");
+  output5.innerHTML = slider5.value;
+  slider5.oninput = function() {
+    output5.innerHTML = this.value;
+  }
+
+  var slider6 = document.getElementById("engin6");
+  var output6 = document.getElementById("e6value");
+  output6.innerHTML = slider6.value;
+
+  slider6.oninput = function() {
+    output6.innerHTML = this.value;
+  }
+</script>
+</html>
